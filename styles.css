@@ -1,0 +1,175 @@
+/*------------------------------------------------*/
+/*-----------------[RESET]------------------------*/
+/*------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+body { line-height: 1; background: #222222;}
+ol, ul { list-style: none; }
+blockquote, q {	quotes: none; }
+
+blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none; }
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+
+article, aside, footer, header, hgroup, nav, section { display: block; }
+
+h1 { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 40px; color: #e74c3c; text-align: center; padding: 50px 20px 50px 20px;}
+h2 { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 40px; color: #fff; text-align: center; padding: 5px;}
+p { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 20px; color: #3498db; text-transform: uppercase; padding: 10px; text-align: left;}
+a { color: #e74c3c; text-decoration: none; }
+
+/*------------------------------------------------*/
+/*-----------------[FORMULARIOS]------------------*/
+/*------------------------------------------------*/
+
+#login {
+	width: 400px;
+	height: 260px;
+	margin: 0 auto;
+}
+#editperfil {
+	width: 600px;
+	margin: 0 auto;
+}
+#login p, #editperfil p {
+	text-align: center;
+}
+#editperfil p.error {
+	color: #e74c3c;
+	font-weight: 700;
+}
+#login input[type=text], #login input[type=password], #editperfil input[type=text], #editperfil input[type=password], #editperfil input[type=file], #editperfil select {
+	width: 94%;
+	height: 60px;
+	margin-bottom: 10px;
+	background-color: #e74c3c;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	padding: 3%;
+	font-weight: 400;
+	color: #222222;
+	border: none;
+}
+#editperfil input[type=text], #editperfil input[type=password] {
+	height: 30px;
+}
+#editperfil input[type=text].error, #editperfil input[type=password].error, #editperfil input[type=file].error {
+	border: 5px solid #f1c40f;
+}
+#editperfil input[type=file] {
+	height: 30px;
+}
+#editperfil select {
+	width: 20%;
+	-webkit-appearance: none;
+}
+input[type=submit] {
+	background: #3498db;
+	border-top: 1px solid #2f87c2;
+	border-right: 1px solid #2875a8;
+	border-bottom: 1px solid #3498db;
+	border-left: 1px solid #2875a8;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 10px 1px #3498db, 0 1px 0 #2875a8, 0 6px 0 #22638f;
+	box-shadow: inset 0 1px 10px 1px #3498db, 0 1px 0 #2875a8, 0 6px 0 #22638f;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	padding: 5px 0 7px 0;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	margin: 0 auto;
+	-webkit-background-clip: padding-box;
+}
+input[type=submit]:hover {
+-webkit-box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053;
+box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053;
+cursor: pointer;
+}
+
+/*------------------------------------------------*/
+/*-----------------[GENERAL]------------------------*/
+/*------------------------------------------------*/
+form {
+	text-align: center;
+}
+#wrapper {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+#avatar {
+	width: 250px;
+	position: relative;
+	float: left;
+}
+#avatar img {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	margin: 0 auto;
+}
+#userinfo {
+	width: 550px;
+	min-height: 201px;
+	margin-top: 50px;
+	position: relative;
+	float: right;
+}
+#userinfo p {
+	line-height: 30px;
+}
+#userfunctions {
+	width: 800px;
+	height: 150px;
+	margin-top: 40px;
+	text-align: center;
+}
+#userfunctions a {
+	background: #3498db;
+	border-top: 1px solid #2f87c2;
+	border-right: 1px solid #2875a8;
+	border-bottom: 1px solid #3498db;
+	border-left: 1px solid #2875a8;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 10px 1px #3498db, 0 1px 0 #2875a8, 0 6px 0 #22638f;
+	box-shadow: inset 0 1px 10px 1px #3498db, 0 1px 0 #2875a8, 0 6px 0 #22638f;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding: 5px 4px 7px 4px;
+	text-align: center;
+	width: 120px;
+	-webkit-background-clip: padding-box;
+}
+
+/*------------------------------------------------*/
+/*-----------------[CLEAR]------------------------*/
+/*------------------------------------------------*/
+
+.clear { clear: both; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
